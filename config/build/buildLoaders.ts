@@ -36,11 +36,23 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
       "sass-loader",
     ],
   };
+
+  const babelLoader = {
+    test: /\.(?:js|jsx|ts|tsx)$/,
+    exclude: /node_modules/,
+    use: {
+      loader: "babel-loader",
+      options: {
+        presets: [["@babel/preset-env", { targets: "defaults" }]],
+      },
+    },
+  };
+
   const typescriptLoader = {
     test: /\.tsx?$/,
     use: "ts-loader",
     exclude: /node_modules/,
   };
 
-  return [typescriptLoader, cssLoaders, svgLoader, fileLoader];
+  return [cssLoaders, svgLoader, fileLoader, babelLoader, typescriptLoader];
 }
