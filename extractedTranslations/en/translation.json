@@ -2,5 +2,12 @@
   "aboutUs": "",
   "language": "",
   "mainPage": "",
-  "pageNotFound": ""
+  "pageError": "",
+  "pageNotFound": "",
+  "reloadPage": "",
+  "translation": {
+    "pageError": "",
+    "reloadPage": "",
+    "throwError": ""
+  }
 }
