@@ -1,7 +1,9 @@
 {
-  "language": "English",
-  "pageNotFound": "Page not found",
-  "pageError": "An unexpected error has occurred",
-  "reloadPage": "Refresh the page",
-  "throwError": "Throw an error"
+    "language": "English",
+    "pageNotFound": "Page not found",
+    "pageError": "An unexpected error has occurred",
+    "reloadPage": "Refresh the page",
+    "throwError": "Throw an error",
+    "mainLink": "Main",
+    "aboutLink": "About"
 }
